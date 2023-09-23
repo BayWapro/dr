@@ -8107,7 +8107,75 @@ table.datatable-table:focus {
 </head>
 
 <body>
+<script>
+// Définir les mots de passe et les pages associées
+const motsDePasse = {
+  "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "in": "1234",
+  "jjjjj": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+ "invest": "1234",
+  "jos": "00000",
+  "nom3": "motDePasse3",
+};
 
+// Demander le nom et le mot de passe
+let nomSaisi = prompt("Veuillez saisir votre nom : ");
+let motDePasseSaisi = prompt("Veuillez saisir votre mot de passe : ");
+
+// Vérifier les informations saisies
+if (motsDePasse.hasOwnProperty(nomSaisi)) {
+  if (motsDePasse[nomSaisi] === motDePasseSaisi) {
+    // Les informations sont correctes, charger la page associée
+    document.location.href =nomSaisi + ".html";
+  } else {
+    // Le mot de passe est incorrect, afficher un message d'erreur
+    alert("Le mot de passe est incorrect.");
+  }
+} else {
+  // Le nom est incorrect, afficher un message d'erreur
+  alert("Le nom est incorrect.");
+}
+
+</script>
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
